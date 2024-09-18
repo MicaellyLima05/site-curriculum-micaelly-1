@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --cor-1: #110f1a;
+    --cor-2: #7469B6;
+    --cor-3: #AD88C6;
+    --cor-4: #E1AFD1;
+    --cor-5: #FFE6E6;
+}
+
+/* Página 3 - Projetos - Cabeçalho*/
+.cabecalho {
+    padding:3% 1% 2% 1%;
+    background-color: var(--cor-1);
+    border-bottom: 2px solid var(--cor-3);
+}
+
+.cabecalho__menu {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.menu__botao {
+    display: none;
+}
+    
+.cabecalho__menu__lista {
+    list-style-type: none;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
+/* Página 3 - Projects - Meio*/
+.apresentacao2 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 5% 15%;
+    background-color: var(--cor-1);
+}
+
+.apresentacao2__conteudo__titulo {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--cor-3);
+}
+
+#titulo_animacao::after {
+    content: "|";
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.apresentacao2__conteudo__animacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao2__conteudo__animacao__imagem {
+    width: 40rem;
+    height: 20rem;
+}
+
+.apresentacao2__conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+
+.apresentacao2__conteudo__jogos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apresentacao2__conteudo__jogos__secao {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.apresentacao2__conteudo__jogos__imagem1, .apresentacao2__conteudo__jogos__imagem3 {
+    width: 30rem;
+    height: 20rem;
+}
+
+.apresentacao2__conteudo__jogos__imagem2 {
+    width: 40rem;
+    height: 20rem;
+}
+
+.apresentacao2__conteudo__jogos__secao__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao2__conteudo__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apresentacao2__conteudo__card__imagem {
+    width: 15rem;
+    height: 20rem;
+}
+
+.apresentacao2__conteudo__titulo__menor {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--cor-5);
+}
+
+.apresentacao2__conteudo__paragrafo__link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: var(--cor-5);
+}
+
+
+@media(max-width: 400px) {
+    .cabecalho {
+        padding: 8% 2% 5% 2%;
+    }
+
+    .cabecalho__menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        background-color: #444;
+        padding: 10px 20px;
+    }
+
+    .cabecalho__menu.active {
+        display: flex;
+    }
+
+    .cabecalho__menu__lista {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu__botao {
+        display: flex;
+        background-color: transparent;
+        margin-left: 70%;
+    }
+    .apresentacao2__conteudo__titulo {
+        padding-top: 6%;
+    }
+    .apresentacao2__conteudo__animacao__card {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .apresentacao2__conteudo__jogos__secao {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .apresentacao2__conteudo__animacao__imagem {
+        width: 80%;
+    }
+
+    .apresentacao2__conteudo__card__imagem {
+        width: 80%;
+    }
+
+    .apresentacao2__conteudo__paragrafo__link {
+        font-size: 1.25rem;
+    }
+}
